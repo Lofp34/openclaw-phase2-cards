@@ -74,13 +74,14 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t);line-hei
 @media(max-width:640px){.c{padding:32px 16px 60px}.hdr h1{font-size:24px}}
 
 .fleet-nav {
-  position: sticky; top: 0; z-index: 9999;
   display: flex; gap: 6px; justify-content: center;
   padding: 10px 16px;
-  background: rgba(10,10,15,0.92);
+  background: rgba(10,10,15,0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border, #25252e);
+  border-bottom: 1px solid #25252e;
   flex-wrap: wrap;
+  position: relative; z-index: 9999;
+  width: 100%;
 }
 .fleet-nav a {
   background: rgba(99,102,241,0.1);
