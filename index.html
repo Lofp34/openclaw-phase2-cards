@@ -72,9 +72,42 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t);line-hei
 .tl{display:flex;flex-wrap:wrap;gap:8px}
 .tt{padding:6px 12px;border-radius:6px;font-size:12px;font-weight:500;font-family:'JetBrains Mono',monospace;background:rgba(99,102,241,.08);color:var(--acl);border:1px solid rgba(99,102,241,.15)}
 @media(max-width:640px){.c{padding:32px 16px 60px}.hdr h1{font-size:24px}}
+
+.fleet-nav {
+  position: fixed; top: 16px; right: 16px; z-index: 9999;
+  display: flex; gap: 8px;
+}
+.fleet-nav a {
+  background: rgba(99,102,241,0.15);
+  border: 1px solid rgba(99,102,241,0.3);
+  color: #a5b4fc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: all 0.2s;
+  backdrop-filter: blur(8px);
+}
+.fleet-nav a:hover {
+  background: rgba(99,102,241,0.3);
+  color: #c7d2fe;
+}
+.fleet-nav a.active {
+  background: rgba(99,102,241,0.4);
+  color: #fff;
+}
+
 </style>
 </head>
 <body>
+<div class="fleet-nav">
+  <a href="https://lofp34.github.io/openclaw-fleet-dashboard/" title="Hub central">🏠 Hub</a>
+  <a href="https://lofp34.github.io/openclaw-audit-dashboard/">📊 Audit</a>
+  <a href="https://lofp34.github.io/openclaw-phase2-cards/" class="active">🐾 Agents</a>
+  <a href="https://lofp34.github.io/openclaw-skills-cards/">🧩 Skills</a>
+</div>
 <div class="c">
 <div class="nav"><a href="https://lofp34.github.io/openclaw-audit-dashboard/" class="nb">&#8592; Dashboard</a><div class="na"><span class="ns act">&#127820; ClawdIA</span><span class="ns dis">EA</span><span class="ns dis">Copy</span><span class="ns dis">SEO</span><span class="ns dis">CRM</span></div></div>
 <div class="hdr"><div class="he">&#127820;</div><h1>ClawdIA</h1><p class="s">Orchestratrice de la flotte OpenClaw</p><div class="m"><span class="b">Phase 2</span><span class="b bn">Agent #1/5</span><span class="b bn">Score: 8.1/10</span></div></div>
