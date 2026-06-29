@@ -1230,7 +1230,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--t);line-hei
     let filesHtml = Object.entries(a.files||{}).map(([name, content]) => {
       const lines = content.split('\n').length;
       return '<div class="fc" id="file-'+a.id+'-'+name.replace(/[^a-zA-Z0-9]/g,'')+'">'+
-        '<div class="fh" onclick="this.parentElement.classList.toggle('open')">'+
+        '<div class="fh" onclick="this.parentElement.classList.toggle(\x27open\x27)">'+
           '<div class="fhl"><span class="fi">📄</span><span class="fn">'+name+'</span><span class="fr">'+lines+' lignes</span></div>'+
           '<span class="chev">▶</span>'+
         '</div>'+
